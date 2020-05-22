@@ -60,7 +60,7 @@ def webhook():
         encoded_str = headers['Authorization']
         username, password = decode(encoded_str)
         print (username, password)
-        print(env['project.name'])
+        print(env['config.username'])
        
     except AttributeError:
         return 'illegal operation'
